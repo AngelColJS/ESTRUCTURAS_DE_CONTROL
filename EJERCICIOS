@@ -1,0 +1,75 @@
+            /*Estructura Condicional (If-Else)*/
+
+/*Ejercicio No1: Escribe un programa que pida al usuario un número
+determine si es positivo, negativo o cero.*/
+
+numero = float(input("Introduce un número: "))
+if numero > 0:
+    print("El número es positivo.")
+elif numero < 0:
+    print("El número es negativo.")
+else:
+    print("El número es cero.")
+
+
+
+            /*Estructura de Selección Múltiple (Switch-Case)*/
+
+/*Ejercicio No2: Crea un programa que simule un menú de opciones 
+y ejecute una acción según la opción seleccionada.*/
+
+opcion = int(input("Selecciona una opción (1-3): 1. Sumar 2. Restar 3. Multiplicar: "))
+if opcion == 1:
+    print("Has seleccionado Sumar.")
+elif opcion == 2:
+    print("Has seleccionado Restar.")
+elif opcion == 3:
+    print("Has seleccionado Multiplicar.")
+else:
+    print("Opción no válida.")
+
+
+
+            /*Estructura de Repetición (While)*/
+
+/*Ejercicio No3: Escribe un programa que pida números al usuario hasta que se introduzca un cero, y
+luego muestre la suma de todos los números introducidos.*/
+
+suma = 0
+while True:
+    numero = float(input("Introduce un número (0 para terminar): "))
+    if numero == 0:
+        break
+    suma += numero
+print("La suma total es:", suma)
+
+
+
+            /*Estructura de Repetición (For):*/
+
+/*Ejercicio No4: Crea un programa que imprima la tabla de multiplicar del 5.*/
+
+for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")
+
+
+
+
+            /*Estructura Anidada:*/
+
+/*Ejercicio No5:  Escribe un programa que pida al usuario tres números y
+los muestre en orden ascendente.*/
+
+a = float(input("Introduce el primer número: "))
+b = float(input("Introduce el segundo número: "))
+c = float(input("Introduce el tercer número: "))
+
+if a > b:
+    a, b = b, a
+if a > c:
+    a, c = c, a
+if b > c:
+    b, c = c, b
+
+print("Números en orden ascendente:", a, b, c)
+
